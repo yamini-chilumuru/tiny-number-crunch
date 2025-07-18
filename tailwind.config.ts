@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				calculator: {
+					display: 'hsl(var(--calculator-display))',
+					number: 'hsl(var(--calculator-number))',
+					operator: 'hsl(var(--calculator-operator))',
+					equals: 'hsl(var(--calculator-equals))',
+					function: 'hsl(var(--calculator-function))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +91,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'button-press': {
+					'0%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(0.95)' },
+					'100%': { transform: 'scale(1)' }
+				},
+				'display-update': {
+					'0%': { opacity: '0.7' },
+					'100%': { opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'button-press': 'button-press 0.1s ease-out',
+				'display-update': 'display-update 0.2s ease-out'
 			}
 		}
 	},
